@@ -11,4 +11,4 @@ Personnummer is a small open-source project created to validate, format and dete
 * determine if coordination number
 * determine if interim number
 
-All features might not be implemented in all languages. Full specification can be found [here](https://github.com/personnummer/meta/blob/master/README.md#package-specification-v3).
+All features might not be implemented in all languages. Full specification can be found [here](https://github.com/personnummer/meta/blob/main/README.md#package-specification-v3).
