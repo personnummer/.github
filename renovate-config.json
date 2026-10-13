@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Shared Renovate preset for all personnummer repositories. Extend it with local>personnummer/.github:renovate-config",
+  "extends": ["config:best-practices", ":preserveSemverRanges"],
+  "minimumReleaseAge": "3 days",
+  "internalChecksFilter": "strict",
+  "packageRules": [
+    {
+      "description": "Automerge non-major updates once they are 3 days old and CI is green",
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "pinDigest"],
+      "automerge": true
+    }
+  ]
+}
