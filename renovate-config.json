@@ -11,6 +11,11 @@
       "automerge": true
     },
     {
+      "description": "Automerge weekly lock file maintenance once CI is green; it only moves versions within the ranges package.json already allows",
+      "matchUpdateTypes": ["lockFileMaintenance"],
+      "automerge": true
+    },
+    {
       "description": "Pinning locks the commit a tag already points to, so it changes no code and needs no wait",
       "matchUpdateTypes": ["pin", "pinDigest"],
       "minimumReleaseAge": null
