@@ -4,6 +4,7 @@
   "extends": ["config:best-practices", "helpers:pinGitHubActionDigestsToSemver", ":preserveSemverRanges"],
   "minimumReleaseAge": "3 days",
   "internalChecksFilter": "strict",
+  "dependencyDashboard": false,
   "packageRules": [
     {
       "description": "Automerge non-major updates once they are 3 days old and CI is green",
