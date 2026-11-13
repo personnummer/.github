@@ -17,6 +17,12 @@
       "automerge": true
     },
     {
+      "description": "A rebuilt lock file has no release date for Renovate to check, so the wait never ends. npm applies the 3 days itself (Renovate passes --before), so do not wait for a date there",
+      "matchUpdateTypes": ["lockFileMaintenance"],
+      "matchManagers": ["npm"],
+      "minimumReleaseAgeBehaviour": "timestamp-optional"
+    },
+    {
       "description": "Pinning locks the commit a tag already points to, so it changes no code and needs no wait",
       "matchUpdateTypes": ["pin", "pinDigest"],
       "minimumReleaseAge": null
